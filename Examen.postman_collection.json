@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "05b56c2a-75fd-4681-bcf0-7a855a5f26b8",
+		"name": "Examen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24800891"
+	},
+	"item": [
+		{
+			"name": "Catalago",
+			"item": [
+				{
+					"name": "Guardar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\":\"test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/catalogo/guardar",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"catalogo",
+								"guardar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Consumo Api",
+			"item": [
+				{
+					"name": "Consumir Api",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AES",
+			"item": [
+				{
+					"name": "Cifrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"text\": \"hola\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/aes/cifrar",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"aes",
+								"cifrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Descifrar",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Oaut",
+			"item": [
+				{
+					"name": "OAUT",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "pwd",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8081/oaut/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"oaut",
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
